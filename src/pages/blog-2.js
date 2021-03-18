@@ -97,7 +97,7 @@ const Blog2 = () => {
                 <div class="col-lg-8 offset-lg-2 col-md-12">
                   <p>Next Article</p>
                   <h2>
-                    <a href="#">None</a>
+                    <Link to="/">None</Link>
                   </h2>
                 </div>
               </div>
