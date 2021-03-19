@@ -6,7 +6,7 @@ import "../styles/bootstrap-grid.min.css"
 import "../styles/animsition.min.css"
 import Layout from "../components/Layouts"
 
-export default function Home() {
+const Home = ({ data }) => {
   return (
     <Layout>
       <div class="spacer">
@@ -19,48 +19,53 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div class="articles-list">
-            <div class="row">
-              <div class="col-md-4">
-                <article>
-                  <Link class="smooth-leave" to="/blog-1">
-                    <div class="article-image">
-                      <div class="icon-arrow"></div>
-                      <img
-                        src="./img/blog/blog-1-cover.jpg"
-                        alt="Save your eyes."
-                      />
-                    </div>
-                    <div class="article-text">
-                      <h4 class="title">Save your eyes from eyestrain.</h4>
-                      <p>Best fonts for your terminal.</p>
-                      <span class="time">March 5</span>
-                    </div>
-                  </Link>
-                </article>
-              </div>
-              <div class="col-md-4">
-                <article>
-                  <Link class="smooth-leave" to="/blog-2">
-                    <div class="article-image">
-                      <div class="icon-arrow"></div>
-                      <img
-                        src="./img/blog/blog-2-cover.jpg"
-                        alt="Master frost gradients"
-                      />
-                    </div>
-                    <div class="article-text">
-                      <h4 class="title">Master frost gradients.</h4>
-                      <p>Create frost gradients with ease.</p>
-                      <span class="time">March 9</span>
-                    </div>
-                  </Link>
-                </article>
+          {data.allMarkdownRemark.edges.map(post => (
+            <div key={post.node.id}>
+              <div class="articles-list">
+                <div class="row">
+                  <div class="col-md-4">
+                    <article>
+                      <Link class="smooth-leave" to="/blog-1">
+                        <div class="article-image">
+                          <div class="icon-arrow"></div>
+                          <img
+                            src="./img/blog/blog-1-cover.jpg"
+                            alt="Save your eyes."
+                          />
+                        </div>
+                        <div class="article-text">
+                          <h4 class="title">{post.node.frontmatter.title}</h4>
+                          <p>{post.node.frontmatter.description}</p>
+                          <span class="time">{post.node.frontmatter.date}</span>
+                        </div>
+                      </Link>
+                    </article>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query BlogIndexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date
+            description
+          }
+        }
+      }
+    }
+  }
+`
+
+export default Home
