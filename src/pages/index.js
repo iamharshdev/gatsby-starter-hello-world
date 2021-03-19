@@ -25,7 +25,10 @@ const Home = ({ data }) => {
                 <div class="row">
                   <div class="col-md-4">
                     <article>
-                      <Link class="smooth-leave" to="/blog-1">
+                      <Link
+                        class="smooth-leave"
+                        to="{post.node.frontmatter.path}"
+                      >
                         <div class="article-image">
                           <div class="icon-arrow"></div>
                           <img
@@ -58,9 +61,11 @@ export const pageQuery = graphql`
         node {
           id
           frontmatter {
+            path
             title
             date
             description
+            thumbnail
           }
         }
       }
