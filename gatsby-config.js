@@ -10,10 +10,11 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
     "gatsby-transformer-remark",
+    "gatsby-plugin-catch-links",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-pages`,
+        name: "blog",
         path: `${__dirname}/content/blog`,
       },
     },
