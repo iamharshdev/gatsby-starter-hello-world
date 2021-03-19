@@ -87,7 +87,10 @@ export default function Layout({ children }) {
           </div>
         </div>
       </header>
-      <main>{children}</main>
+
+      <main>
+        {children}
+      </main>
       <footer class="mar-top-lg">
         <div class="container">
           <div class="row">
