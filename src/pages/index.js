@@ -21,30 +21,28 @@ const Home = ({ data }) => {
           </div>
 
           <div class="articles-list">
-            <div class="row">
+            <div class="grids">
               {data.allMarkdownRemark.edges.map(post => (
                 <div key={post.node.id}>
-                  <div class="d-flex flex-column justify-content-around">
-                    <article>
-                      <Link
-                        class="smooth-leave"
-                        to="{post.node.frontmatter.path}"
-                      >
-                        <div class="article-image">
-                          <div class="icon-arrow"></div>
-                          <img
-                            src="./img/blog/blog-1-cover.jpg"
-                            alt="Save your eyes."
-                          />
-                        </div>
-                        <div class="article-text">
-                          <h4 class="title">{post.node.frontmatter.title}</h4>
-                          <p>{post.node.frontmatter.description}</p>
-                          <span class="time">{post.node.frontmatter.date}</span>
-                        </div>
-                      </Link>
-                    </article>
-                  </div>
+                  <article className="mr-3">
+                    <Link
+                      class="smooth-leave"
+                      to="{post.node.frontmatter.path}"
+                    >
+                      <div class="article-image">
+                        <div class="icon-arrow"></div>
+                        <img
+                          src="./img/blog/blog-1-cover.jpg"
+                          alt="Save your eyes."
+                        />
+                      </div>
+                      <div class="article-text">
+                        <h4 class="title">{post.node.frontmatter.title}</h4>
+                        <p>{post.node.frontmatter.description}</p>
+                        <span class="time">{post.node.frontmatter.date}</span>
+                      </div>
+                    </Link>
+                  </article>
                 </div>
               ))}
             </div>

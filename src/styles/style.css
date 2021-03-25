@@ -2802,3 +2802,24 @@ article.single .next-article a:hover {
     border-color: #cfcfcf;
   }
 }
+
+/* Testing out grid */
+
+.grids {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+  margin-top: 32px;
+}
+
+/* Portrait and Landscape */
+@media (min-width: 768px) {
+  .grids {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .grids {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
