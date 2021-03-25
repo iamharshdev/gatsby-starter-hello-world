@@ -1,11 +1,7 @@
 const path = require("path")
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { creatPage } = boundActionCreators
-
-  const postTemplate = path.resolve("src/templates/blogPost.js")
-
-  return graphql(`
+exports.createPages = async ({ graphql, actions }) => {
+  const { data } = await graphql(`
     {
       allMarkdownRemark {
         edges {
@@ -22,16 +18,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
-  `).then(res => {
-    if (res.errors) {
-      return Promise.reject(res.errors)
-    }
+  `)
 
-    res.data.allMarkdownremarks.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
-      })
+  data.allMarkdownRemark.nodes.forEach(node => {
+    actions.createPage({
+      path: "/blog" + node.frontmatter.slug,
+      component: path.resolve("./src/templates/blogPost.js"),
+      context: { slug: node.frontmatter.slug },
     })
   })
 }
