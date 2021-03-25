@@ -2,6 +2,8 @@
 title: Second Blog
 date: 2021-03-19T11:34:23.984Z
 description: "Crazy "
+thumbnail: https://d33wubrfki0l68.cloudfront.net/963cfc0e31cde983618382c986292dd045f5b4bb/d7ee1/img/blog/blog-2-cover.jpg
+slug: second-blog
 ---
 <!--StartFragment-->
 
