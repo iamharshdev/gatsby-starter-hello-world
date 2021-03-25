@@ -24,7 +24,7 @@ const ErrorPage = () => {
                   <h1>404!</h1>
                   <p className="lead">Seems like you are lost.</p>
                   <h2>
-                    Lets get you <Link to="/">Home</Link>
+                    Lets get you <Link href="https://codegra.in/">Home</Link>
                   </h2>
                 </div>
               </div>
