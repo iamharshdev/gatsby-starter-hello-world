@@ -34,74 +34,80 @@ export default function Layout({ children }) {
         />
       </Helmet>
       <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <a class="logo smooth-leave" href="https://codegra.in/"></a>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <a className="logo smooth-leave" href="https://codegra.in/"></a>
               <nav>
                 <ul>
                   <li>
-                    <a class="smooth-leave" href="https://codegra.in/about">
+                    <a className="smooth-leave" href="https://codegra.in/about">
                       About
                     </a>
                   </li>
                   <li>
-                    <a class="smooth-leave" href="https://codegra.in/services">
+                    <a
+                      className="smooth-leave"
+                      href="https://codegra.in/services"
+                    >
                       Services
                     </a>
                   </li>
                   <li>
-                    <a class="smooth-leave" href="https://codegra.in/work">
+                    <a className="smooth-leave" href="https://codegra.in/work">
                       Work
                     </a>
                   </li>
                   <li>
-                    <Link class="smooth-leave" to="/">
+                    <Link className="smooth-leave" to="/">
                       Blog
                     </Link>
                   </li>
                   <li>
-                    <a class="smooth-leave" href="https://codegra.in/contact">
+                    <a
+                      className="smooth-leave"
+                      href="https://codegra.in/contact"
+                    >
                       Contact
                     </a>
                   </li>
                 </ul>
               </nav>
-              <span class="nav-toggle">Menu</span>
+              <span className="nav-toggle">Menu</span>
             </div>
           </div>
         </div>
       </header>
 
       <main>{children}</main>
-      <footer class="mar-top-lg">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-3 col-sm-12">
-              <a class="logo smooth-leave" href="./index.html"></a>
+      <footer className="mar-top-lg">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-3 col-sm-12">
+              <a className="logo smooth-leave" href="https://codegra.in/"></a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="footer-contacts">
-                <div class="wrap">
-                  <div class="address">
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="footer-contacts">
+                <div className="wrap">
+                  <div className="address">
                     <p>
                       Pune
                       <br />
                       Maharashtra, IN
                     </p>
                   </div>
-                  <a class="email" href="mailto:codegrain@gmail.com">
+                  <a className="email" href="mailto:codegrain@gmail.com">
                     codegrain@gmail.com
                   </a>
                   <br />
-                  <a class="phone" href="tel:+919022332201">
+                  <a className="phone" href="tel:+919022332201">
                     +91 902-233-2202
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-5 col-sm-12">
-              <div class="social-links">
+            <div className="col-lg-4 col-md-5 col-sm-12">
+              <div className="social-links">
                 <ul>
                   <li>
                     <a

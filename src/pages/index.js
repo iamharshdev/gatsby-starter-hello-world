@@ -32,14 +32,16 @@ const Home = ({ data }) => {
                       <div className="article-image">
                         <div className="icon-arrow"></div>
                         <img
-                          src="./img/blog/blog-1-cover.jpg"
+                          src={post.node.frontmatter.thumbnail}
                           alt="Save your eyes."
                         />
                       </div>
                       <div className="article-text">
                         <h4 className="title">{post.node.frontmatter.title}</h4>
                         <p>{post.node.frontmatter.description}</p>
-                        <span className="time">{post.node.frontmatter.date}</span>
+                        <span className="time">
+                          {post.node.frontmatter.date}
+                        </span>
                       </div>
                     </Link>
                   </article>

@@ -4,6 +4,7 @@ import Layout from "../components/Layouts"
 
 const Template = ({ data }) => {
   const post = data.markdownRemark
+  console.log(data)
   return (
     <div>
       <Layout>

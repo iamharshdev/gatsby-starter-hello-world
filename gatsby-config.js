@@ -9,13 +9,23 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
-    "gatsby-transformer-remark",
     "gatsby-plugin-catch-links",
+    "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "blog",
         path: `${__dirname}/content/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "images",
+        path: `${__dirname}/src/img`,
       },
     },
   ],
