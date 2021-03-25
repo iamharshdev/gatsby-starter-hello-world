@@ -23,7 +23,7 @@ const Home = ({ data }) => {
             <div key={post.node.id}>
               <div class="articles-list">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="d-flex flex-column justify-content-around">
                     <article>
                       <Link
                         class="smooth-leave"
