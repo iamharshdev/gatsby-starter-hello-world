@@ -19,10 +19,11 @@ const Home = ({ data }) => {
               </div>
             </div>
           </div>
-          {data.allMarkdownRemark.edges.map(post => (
-            <div key={post.node.id}>
-              <div class="articles-list">
-                <div class="row">
+
+          <div class="articles-list">
+            <div class="row">
+              {data.allMarkdownRemark.edges.map(post => (
+                <div key={post.node.id}>
                   <div class="d-flex flex-column justify-content-around">
                     <article>
                       <Link
@@ -45,9 +46,9 @@ const Home = ({ data }) => {
                     </article>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </Layout>
@@ -56,7 +57,7 @@ const Home = ({ data }) => {
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
           id
