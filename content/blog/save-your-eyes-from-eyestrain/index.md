@@ -3,6 +3,7 @@ title: Save your eyes from eyestrain.
 date: 2021-03-19T11:58:55.716Z
 description: Best fonts for your terminal.
 thumbnail: https://gatsbyblogtesting.netlify.app/img/blog/blog-1-cover.jpg
+slug: save-your-eyes
 ---
 <!--StartFragment-->
 
