@@ -62,7 +62,6 @@ export const pageQuery = graphql`
         node {
           id
           frontmatter {
-            path
             title
             date(formatString: "DD-MM-YYYY")
             description
