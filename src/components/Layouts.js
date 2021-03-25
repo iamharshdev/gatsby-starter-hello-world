@@ -37,33 +37,21 @@ export default function Layout({ children }) {
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <a
-                class="logo smooth-leave"
-                href="https://codegrain.netlify.app/"
-              ></a>
+              <a class="logo smooth-leave" href="https://codegra.in/"></a>
               <nav>
                 <ul>
                   <li>
-                    <a
-                      class="smooth-leave"
-                      href="https://codegrain.netlify.app/about"
-                    >
+                    <a class="smooth-leave" href="https://codegra.in/about">
                       About
                     </a>
                   </li>
                   <li>
-                    <a
-                      class="smooth-leave"
-                      href="https://codegrain.netlify.app/services"
-                    >
+                    <a class="smooth-leave" href="https://codegra.in/services">
                       Services
                     </a>
                   </li>
                   <li>
-                    <a
-                      class="smooth-leave"
-                      href="https://codegrain.netlify.app/work"
-                    >
+                    <a class="smooth-leave" href="https://codegra.in/work">
                       Work
                     </a>
                   </li>
@@ -73,10 +61,7 @@ export default function Layout({ children }) {
                     </Link>
                   </li>
                   <li>
-                    <a
-                      class="smooth-leave"
-                      href="https://codegrain.netlify.app/contact"
-                    >
+                    <a class="smooth-leave" href="https://codegra.in/contact">
                       Contact
                     </a>
                   </li>
@@ -88,9 +73,7 @@ export default function Layout({ children }) {
         </div>
       </header>
 
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <footer class="mar-top-lg">
         <div class="container">
           <div class="row">

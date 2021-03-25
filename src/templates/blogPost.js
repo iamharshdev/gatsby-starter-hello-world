@@ -32,9 +32,9 @@ const Template = ({ data }) => {
                 </div>
               </div>
               <div className="row">{post}</div>
-              <div class="next-article">
-                <div class="row">
-                  <div class="col-lg-8 offset-lg-2 col-md-12">
+              <div className="next-article">
+                <div className="row">
+                  <div className="col-lg-8 offset-lg-2 col-md-12">
                     <p>Next Article</p>
                     <h2>
                       <Link to="/blog-2">Master frost gradients.</Link>
@@ -51,8 +51,8 @@ const Template = ({ data }) => {
 }
 
 export const postQuery = graphql`
-  query BlogDetails {
-    markdownRemark {
+  query BlogDetails($slug: String) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         date

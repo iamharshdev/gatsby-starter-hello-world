@@ -9,37 +9,37 @@ import Layout from "../components/Layouts"
 const Home = ({ data }) => {
   return (
     <Layout>
-      <div class="spacer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-              <div class="page-intro mar-top-lg">
-                <h1 class="page-title">Blog</h1>
+      <div className="spacer">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+              <div className="page-intro mar-top-lg">
+                <h1 className="page-title">Blog</h1>
                 <p>Sharing super ideas in simple, minimal & elegant way.</p>
               </div>
             </div>
           </div>
 
-          <div class="articles-list">
-            <div class="grids">
+          <div className="articles-list">
+            <div className="grids">
               {data.allMarkdownRemark.edges.map(post => (
                 <div key={post.node.id}>
                   <article className="mr-3">
                     <Link
-                      class="smooth-leave"
+                      className="smooth-leave"
                       to="{post.node.frontmatter.path}"
                     >
-                      <div class="article-image">
-                        <div class="icon-arrow"></div>
+                      <div className="article-image">
+                        <div className="icon-arrow"></div>
                         <img
                           src="./img/blog/blog-1-cover.jpg"
                           alt="Save your eyes."
                         />
                       </div>
-                      <div class="article-text">
-                        <h4 class="title">{post.node.frontmatter.title}</h4>
+                      <div className="article-text">
+                        <h4 className="title">{post.node.frontmatter.title}</h4>
                         <p>{post.node.frontmatter.description}</p>
-                        <span class="time">{post.node.frontmatter.date}</span>
+                        <span className="time">{post.node.frontmatter.date}</span>
                       </div>
                     </Link>
                   </article>
