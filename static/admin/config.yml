@@ -16,6 +16,7 @@ collections:
     path: "{{title}}/index"
     editor:
       preview: true
+    publish_mode: editorial_workflow
     fields:
       - {
           label: "Slug",
@@ -40,4 +41,3 @@ collections:
           config,
           multiple: true,
         },
-        publish_mode: editorial_workflow
