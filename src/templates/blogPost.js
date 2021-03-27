@@ -25,16 +25,6 @@ const Template = ({ data }) => {
                   <div dangerouslySetInnerHTML={{ __html: html }} />
                 </div>
               </div>
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="article-content-image">
-                    <img
-                      src="../img/blog/blog-1.jpg"
-                      alt="Save your eyes from eyestrain."
-                    />
-                  </div>
-                </div>
-              </div>
               <div className="row"></div>
               <div className="next-article">
                 <div className="row">
