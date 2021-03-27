@@ -1,5 +1,8 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import "../styles/style.css"
+import "../styles/bootstrap-grid.min.css"
+import "../styles/animsition.min.css"
 import Layout from "../components/Layouts"
 
 const Template = ({ data }) => {
