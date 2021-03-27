@@ -7,6 +7,8 @@ import "../styles/animsition.min.css"
 import Layout from "../components/Layouts"
 
 const Home = ({ data }) => {
+  const blogs = data.allMarkdownRemark.nodes
+
   return (
     <Layout>
       <div className="spacer">
@@ -22,26 +24,24 @@ const Home = ({ data }) => {
 
           <div className="articles-list">
             <div className="grids">
-              {data.allMarkdownRemark.edges.map(post => (
-                <div key={post.node.id}>
+              {blogs.map(blog => (
+                <div key={blog.frontmatter.id}>
                   <article className="mr-3">
                     <Link
-                      className="smooth-leave"
-                      to="{post.node.frontmatter.path}"
+                      to={"/" + blog.frontmatter.slug}
+                      key={blog.id.toString()}
                     >
                       <div className="article-image">
                         <div className="icon-arrow"></div>
                         <img
-                          src={post.node.frontmatter.thumbnail}
-                          alt="Save your eyes."
+                          src={blog.frontmatter.thumbnail}
+                          alt="Blog posts"
                         />
                       </div>
                       <div className="article-text">
-                        <h4 className="title">{post.node.frontmatter.title}</h4>
-                        <p>{post.node.frontmatter.description}</p>
-                        <span className="time">
-                          {post.node.frontmatter.date}
-                        </span>
+                        <h4 className="title">{blog.frontmatter.title}</h4>
+                        <p>{blog.frontmatter.description}</p>
+                        <span className="time">{blog.frontmatter.date}</span>
                       </div>
                     </Link>
                   </article>
@@ -58,16 +58,15 @@ const Home = ({ data }) => {
 export const pageQuery = graphql`
   query BlogIndexQuery {
     allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD-MM-YYYY")
-            description
-            thumbnail
-          }
+      nodes {
+        frontmatter {
+          description
+          slug
+          title
+          thumbnail
+          date(formatString: "DD-MM-YYYY")
         }
+        id
       }
     }
   }

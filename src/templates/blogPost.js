@@ -3,27 +3,26 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/Layouts"
 
 const Template = ({ data }) => {
-  const post = data.markdownRemark
+  const { html } = data.markdownRemark
+  const { title, description, date } = data.markdownRemark.frontmatter
   console.log(data)
   return (
     <div>
       <Layout>
-        <Link to="/">Go Back</Link>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <div className="spacer">
           <article className="single">
             <div className="container">
               <div className="row">
                 <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                   <div className="mar-top-lg">
-                    <span className="time">{post.frontmatter.date}</span>
-                    <h2 className="article-title">{post.frontmatter.title}</h2>
-                    <p>{post.frontmatter.description}</p>
+                    <span className="time">{date}</span>
+                    <h2 className="article-title">{title}</h2>
+                    <p>{description}</p>
                   </div>
+                  <div dangerouslySetInnerHTML={{ __html: html }} />
                 </div>
               </div>
               <div className="row">
-                
                 <div className="col-md-12">
                   <div className="article-content-image">
                     <img
@@ -33,7 +32,7 @@ const Template = ({ data }) => {
                   </div>
                 </div>
               </div>
-              <div className="row">{post}</div>
+              <div className="row"></div>
               <div className="next-article">
                 <div className="row">
                   <div className="col-lg-8 offset-lg-2 col-md-12">
@@ -57,7 +56,7 @@ export const postQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date
+        date(formatString: "DD-MM-YYYY")
         description
         title
       }

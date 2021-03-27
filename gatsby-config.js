@@ -20,6 +20,9 @@ module.exports = {
         name: "blog",
         path: `${__dirname}/content/blog`,
       },
-    },    
+    },
   ],
+  flags: {
+    THE_FLAG: false,
+  },
 }
