@@ -23,6 +23,7 @@ const Template = ({ data }) => {
                 </div>
               </div>
               <div className="row">
+                
                 <div className="col-md-12">
                   <div className="article-content-image">
                     <img
