@@ -5,53 +5,53 @@ date: 2021-03-27T14:28:48.754Z
 description: We use at Codegrain
 thumbnail: https://codegra.in/img/blog/blog-3-cover.jpg
 ---
--   **[Latest](https://github.com/mangerlahn/Latest)**
 
-    ![Master frost gradients.](../img/blog/blog-3-1.jpg)
+- **[Latest](https://github.com/mangerlahn/Latest)**
 
-    A small utility app for macOS that makes sure you know about all the
-    latest updates to the apps you use.
+  ![Master frost gradients.](../../static/img/blog/blog-2-1.jpg)
 
--   **[iina](https://github.com/iina/iina)**
+  A small utility app for macOS that makes sure you know about all the
+  latest updates to the apps you use.
 
-    ![Master frost gradients.](../img/blog/blog-3-2.jpg)
+- **[iina](https://github.com/iina/iina)**
 
-    The modern video player for macOS.
+  ![Master frost gradients.](../img/blog/blog-3-2.jpg)
 
--   **[Maccy](https://github.com/p0deje/Maccy)**
+  The modern video player for macOS.
 
-    ![Master frost gradients.](../img/blog/blog-3-3.jpg)
+- **[Maccy](https://github.com/p0deje/Maccy)**
 
-    Lightweight clipboard manager for macOS.
+  ![Master frost gradients.](../img/blog/blog-3-3.jpg)
 
--   **[Rectangle](https://github.com/rxhanson/Rectangle)**
+  Lightweight clipboard manager for macOS.
 
-    ![Master frost gradients.](../img/blog/blog-3-4.jpg)
+- **[Rectangle](https://github.com/rxhanson/Rectangle)**
 
-    Move and resize windows on macOS with keyboard shortcuts and snap
-    areas.
+  ![Master frost gradients.](../img/blog/blog-3-4.jpg)
 
--   **[Monitor
-    Control](https://github.com/MonitorControl/MonitorControl)**
+  Move and resize windows on macOS with keyboard shortcuts and snap
+  areas.
 
-    ![Master frost gradients.](../img/blog/blog-3-5.jpg)
+- **[Monitor
+  Control](https://github.com/MonitorControl/MonitorControl)**
 
-    Control your external monitor brightness & volume on your Mac.
+  ![Master frost gradients.](../img/blog/blog-3-5.jpg)
 
--   **[Mos](https://github.com/Caldis/Mos)**
+  Control your external monitor brightness & volume on your Mac.
 
-    ![Master frost gradients.](../img/blog/blog-3-6.jpg)
+- **[Mos](https://github.com/Caldis/Mos)**
 
-    A lightweight tool used to smooth scrolling and set scroll direction
-    independently for your mouse on macOS
+  ![Master frost gradients.](../img/blog/blog-3-6.jpg)
 
--   **[Alt Tab](https://github.com/lwouis/alt-tab-macos)**
+  A lightweight tool used to smooth scrolling and set scroll direction
+  independently for your mouse on macOS
 
-    ![Master frost gradients.](../img/blog/blog-3-7.jpg)
+- **[Alt Tab](https://github.com/lwouis/alt-tab-macos)**
 
-    Windows alt-tab on macOS.
+  ![Master frost gradients.](../img/blog/blog-3-7.jpg)
+
+  Windows alt-tab on macOS.
 
 Next Article
 
-[None](#)
----------
+## [None](#)
