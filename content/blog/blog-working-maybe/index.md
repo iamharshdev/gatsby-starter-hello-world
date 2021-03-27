@@ -3,15 +3,13 @@ slug: blog-working-i-think
 title: Blog Working, maybe
 date: 2021-03-27T11:14:42.980Z
 description: crazy
-thumbnail: https://d33wubrfki0l68.cloudfront.net/cdbd72b1ba8b62da3432b486d1836e7f8f081082/b28ef/img/blog/blog-1.jpg
+thumbnail: https://d33wubrfki0l68.cloudfront.net/963cfc0e31cde983618382c986292dd045f5b4bb/d7ee1/img/blog/blog-2-cover.jpg
 ---
 <!--StartFragment-->
 
 As developers, we stare at code all day. Making sure that code is presented in a legible and clear format is table stakes for productive coding. What are some great monospaced fonts aimed at displaying code?
 
-![](blog-2-1.jpg)
-
-
+![image](blog-2-1.jpg "Not working")
 
 * **[Victor Mono](https://rubjo.github.io/victor-mono/)**
 
