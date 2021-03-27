@@ -16,7 +16,6 @@ collections:
     path: "{{title}}/index"
     editor:
       preview: true
-    publish_mode: editorial_workflow
     fields:
       - {
           label: "Slug",
@@ -40,4 +39,11 @@ collections:
           media_library,
           config,
           multiple: true,
+        }
+      - {
+          label: “Save as Draft”,
+          name: “draft”,
+          required: false,
+          widget: “boolean”,
+          default: true,
         }
