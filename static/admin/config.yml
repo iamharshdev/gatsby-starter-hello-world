@@ -41,9 +41,9 @@ collections:
           multiple: true,
         }
       - {
-          label: “Save as Draft”,
-          name: “draft”,
+          label: "Save as Draft",
+          name: "draft",
           required: false,
-          widget: “boolean”,
+          widget: "boolean",
           default: true,
         }
