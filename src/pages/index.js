@@ -35,7 +35,7 @@ const Home = ({ data }) => {
                         <div className="icon-arrow"></div>
                         <img
                           src={blog.frontmatter.thumbnail}
-                          alt="Blog posts"
+                          alt="Blog post thumbnail"
                         />
                       </div>
                       <div className="article-text">
