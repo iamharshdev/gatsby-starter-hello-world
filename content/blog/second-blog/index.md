@@ -1,9 +1,9 @@
 ---
+slug: second-blog
 title: Second Blog
 date: 2021-03-19T11:34:23.984Z
 description: "Crazy "
 thumbnail: https://d33wubrfki0l68.cloudfront.net/963cfc0e31cde983618382c986292dd045f5b4bb/d7ee1/img/blog/blog-2-cover.jpg
-slug: second-blog
 ---
 <!--StartFragment-->
 
@@ -12,6 +12,8 @@ If you're not familiar with GraphQL, this may seem slightly confusing, but you c
 *Note: To learn more about GraphQL, consider this [excellent resource](https://www.howtographql.com/)*
 
 The underlying query name `BlogPostByPath` (note: these query names need to be unique!) will be injected with the current path, e.g. the specific blog post we are viewing. This path will be available as `$path` in your query. For instance, if you were viewing your previously created blog post, the path of the file that data will be pulled from will be `/hello-world`.
+
+![](/static/img/blog-3-1.jpg)
 
 `markdownRemark` will be the injected property available via the prop `data`, as named in the GraphQL query. Each property you pull via the GraphQL query will be available under this `markdownRemark` property. For example, to access the transformed HTML, you would access the `data` prop via `data.markdownRemark.html`.
 
