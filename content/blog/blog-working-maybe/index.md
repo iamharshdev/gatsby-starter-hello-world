@@ -9,7 +9,7 @@ thumbnail: https://d33wubrfki0l68.cloudfront.net/963cfc0e31cde983618382c986292dd
 
 As developers, we stare at code all day. Making sure that code is presented in a legible and clear format is table stakes for productive coding. What are some great monospaced fonts aimed at displaying code?
 
-![image](blog-3-1.jpg "Not working")
+![image](/static/img/blog-3-7.jpg "Not working")
 
 * **[Victor Mono](https://rubjo.github.io/victor-mono/)**
 
